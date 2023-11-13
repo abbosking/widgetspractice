@@ -8,16 +8,18 @@ class constants  extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return MaterialApp(
-      title: 'My dog',
+      title: 'Congratulations',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Yellow lab'),
+          title: Text('Greetings'),
         ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              DogName('Eocky'),
+              greetings('Welcome to my app'),
+              SizedBox(height: 0.8),
+              greetings('good luck'),
               SizedBox(height: 0.8)
             ],
           ),
@@ -28,10 +30,10 @@ class constants  extends StatelessWidget{
   const constants();
 }
 
-class DogName extends StatelessWidget {
+class greetings extends StatelessWidget {
   final String name;
 
-  const DogName(this.name);
+  const greetings(this.name);
 
   @override
   Widget build(BuildContext context) {

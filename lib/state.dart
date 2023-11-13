@@ -1,25 +1,25 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const constants());
+  runApp(const Congratulations());
 }
 
-class constants  extends StatefulWidget{
+class Congratulations  extends StatefulWidget{
   @override
-  State<constants> createState() => _constantsState();
+  State<Congratulations> createState() => _CongratulationsState();
 
-  const constants();
+  const Congratulations();
 }
 
-class _constantsState extends State<constants> {
+class _CongratulationsState extends State<Congratulations> {
   int count=0;
   @override
   Widget build(BuildContext context){
     return MaterialApp(
-        title: 'My dog',
+        title: 'Congratulations',
         home: Scaffold(
           appBar: AppBar(
-            title: Text('Yellow lab'),
+            title: Text('Greetings'),
           ),
           floatingActionButton:   FloatingActionButton(
             onPressed: (){
@@ -28,7 +28,7 @@ class _constantsState extends State<constants> {
               });
             },
             child: Icon(Icons.add),
-            backgroundColor: Colors.grey[800],
+            backgroundColor: Colors.grey[700],
           ),
           body: Center(
             child: Column(
